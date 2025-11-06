@@ -1,0 +1,1856 @@
+
+Standard Operating Procedure (SOP) Document - Incident Resolution Reference
+============================================================================
+Purpose:
+--------
+This SOP serves as a knowledge base for mapping and inferring resolution notes for future incidents
+based on existing incident resolution data. It includes details from both closed and ongoing incidents.
+
+---------------------------------------------------------------------
+1. Incident Summary
+---------------------------------------------------------------------
+
+
+Incident ID     : INC1001
+Status          : Closed
+Category        : Software
+Subcategory     : Update Issue
+Priority        : P3
+Assignment Group: Software Team
+Assigned To     : Charlie
+Opened Date     : 2025-02-18
+Closed Date     : 2025-02-21
+Short Description: Update Issue issue reported
+Description     : User reported a Update Issue issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1002
+Status          : Closed
+Category        : Software
+Subcategory     : Application Error
+Priority        : P1
+Assignment Group: Network Team
+Assigned To     : Grace
+Opened Date     : 2025-08-14
+Closed Date     : 2025-08-17
+Short Description: Application Error issue reported
+Description     : User reported a Application Error issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1003
+Status          : Closed
+Category        : Software
+Subcategory     : Update Issue
+Priority        : P4
+Assignment Group: Network Team
+Assigned To     : Hannah
+Opened Date     : 2025-08-11
+Closed Date     : 2025-08-12
+Short Description: Update Issue issue reported
+Description     : User reported a Update Issue issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1004
+Status          : Closed
+Category        : Hardware
+Subcategory     : Printer
+Priority        : P1
+Assignment Group: IT Support
+Assigned To     : David
+Opened Date     : 2025-08-16
+Closed Date     : 2025-08-18
+Short Description: Printer issue reported
+Description     : User reported a Printer issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1005
+Status          : Closed
+Category        : Network
+Subcategory     : WiFi
+Priority        : P1
+Assignment Group: Security Team
+Assigned To     : Charlie
+Opened Date     : 2025-02-09
+Closed Date     : 2025-02-11
+Short Description: WiFi issue reported
+Description     : User reported a WiFi issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1006
+Status          : Closed
+Category        : Security
+Subcategory     : Unauthorized Access
+Priority        : P4
+Assignment Group: IT Support
+Assigned To     : Alice
+Opened Date     : 2025-04-20
+Closed Date     : 2025-04-21
+Short Description: Unauthorized Access issue reported
+Description     : User reported a Unauthorized Access issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1007
+Status          : Closed
+Category        : Network
+Subcategory     : Router
+Priority        : P2
+Assignment Group: Security Team
+Assigned To     : Grace
+Opened Date     : 2025-05-19
+Closed Date     : 2025-05-20
+Short Description: Router issue reported
+Description     : User reported a Router issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1008
+Status          : Closed
+Category        : Security
+Subcategory     : Malware
+Priority        : P1
+Assignment Group: IT Support
+Assigned To     : Bob
+Opened Date     : 2025-08-26
+Closed Date     : 2025-08-31
+Short Description: Malware issue reported
+Description     : User reported a Malware issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1009
+Status          : Closed
+Category        : Software
+Subcategory     : Update Issue
+Priority        : P1
+Assignment Group: Network Team
+Assigned To     : David
+Opened Date     : 2025-06-10
+Closed Date     : 2025-06-13
+Short Description: Update Issue issue reported
+Description     : User reported a Update Issue issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1010
+Status          : Closed
+Category        : Software
+Subcategory     : Update Issue
+Priority        : P2
+Assignment Group: Network Team
+Assigned To     : David
+Opened Date     : 2025-04-13
+Closed Date     : 2025-04-16
+Short Description: Update Issue issue reported
+Description     : User reported a Update Issue issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1011
+Status          : Closed
+Category        : Hardware
+Subcategory     : Monitor
+Priority        : P4
+Assignment Group: Security Team
+Assigned To     : David
+Opened Date     : 2025-10-01
+Closed Date     : 2025-10-03
+Short Description: Monitor issue reported
+Description     : User reported a Monitor issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1012
+Status          : Closed
+Category        : Security
+Subcategory     : Unauthorized Access
+Priority        : P2
+Assignment Group: Software Team
+Assigned To     : Charlie
+Opened Date     : 2025-10-19
+Closed Date     : 2025-10-24
+Short Description: Unauthorized Access issue reported
+Description     : User reported a Unauthorized Access issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1013
+Status          : Closed
+Category        : Security
+Subcategory     : Phishing
+Priority        : P4
+Assignment Group: Security Team
+Assigned To     : Bob
+Opened Date     : 2025-05-26
+Closed Date     : 2025-05-29
+Short Description: Phishing issue reported
+Description     : User reported a Phishing issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1014
+Status          : Closed
+Category        : Hardware
+Subcategory     : Printer
+Priority        : P4
+Assignment Group: Security Team
+Assigned To     : Eva
+Opened Date     : 2025-03-20
+Closed Date     : 2025-03-22
+Short Description: Printer issue reported
+Description     : User reported a Printer issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1015
+Status          : Closed
+Category        : Software
+Subcategory     : Application Error
+Priority        : P1
+Assignment Group: Software Team
+Assigned To     : Hannah
+Opened Date     : 2025-03-27
+Closed Date     : 2025-04-01
+Short Description: Application Error issue reported
+Description     : User reported a Application Error issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1016
+Status          : Closed
+Category        : Network
+Subcategory     : WiFi
+Priority        : P4
+Assignment Group: IT Support
+Assigned To     : Grace
+Opened Date     : 2025-10-25
+Closed Date     : 2025-10-29
+Short Description: WiFi issue reported
+Description     : User reported a WiFi issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1017
+Status          : Closed
+Category        : Hardware
+Subcategory     : Monitor
+Priority        : P4
+Assignment Group: Software Team
+Assigned To     : Hannah
+Opened Date     : 2025-07-12
+Closed Date     : 2025-07-13
+Short Description: Monitor issue reported
+Description     : User reported a Monitor issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1018
+Status          : Closed
+Category        : Hardware
+Subcategory     : Keyboard
+Priority        : P1
+Assignment Group: Security Team
+Assigned To     : Alice
+Opened Date     : 2025-01-05
+Closed Date     : 2025-01-09
+Short Description: Keyboard issue reported
+Description     : User reported a Keyboard issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1019
+Status          : Closed
+Category        : Network
+Subcategory     : VPN
+Priority        : P1
+Assignment Group: Software Team
+Assigned To     : Charlie
+Opened Date     : 2025-08-11
+Closed Date     : 2025-08-14
+Short Description: VPN issue reported
+Description     : User reported a VPN issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1020
+Status          : Closed
+Category        : Software
+Subcategory     : Crash
+Priority        : P3
+Assignment Group: IT Support
+Assigned To     : Frank
+Opened Date     : 2025-10-15
+Closed Date     : 2025-10-20
+Short Description: Crash issue reported
+Description     : User reported a Crash issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1021
+Status          : Closed
+Category        : Network
+Subcategory     : WiFi
+Priority        : P2
+Assignment Group: Software Team
+Assigned To     : Grace
+Opened Date     : 2025-07-13
+Closed Date     : 2025-07-15
+Short Description: WiFi issue reported
+Description     : User reported a WiFi issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1022
+Status          : Closed
+Category        : Software
+Subcategory     : Application Error
+Priority        : P1
+Assignment Group: Software Team
+Assigned To     : Alice
+Opened Date     : 2025-11-01
+Closed Date     : 2025-11-04
+Short Description: Application Error issue reported
+Description     : User reported a Application Error issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1023
+Status          : Closed
+Category        : Network
+Subcategory     : WiFi
+Priority        : P2
+Assignment Group: Network Team
+Assigned To     : Frank
+Opened Date     : 2025-05-17
+Closed Date     : 2025-05-22
+Short Description: WiFi issue reported
+Description     : User reported a WiFi issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1024
+Status          : Closed
+Category        : Software
+Subcategory     : Crash
+Priority        : P2
+Assignment Group: Security Team
+Assigned To     : Grace
+Opened Date     : 2025-03-03
+Closed Date     : 2025-03-07
+Short Description: Crash issue reported
+Description     : User reported a Crash issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1025
+Status          : Closed
+Category        : Hardware
+Subcategory     : Monitor
+Priority        : P2
+Assignment Group: IT Support
+Assigned To     : Bob
+Opened Date     : 2025-06-23
+Closed Date     : 2025-06-26
+Short Description: Monitor issue reported
+Description     : User reported a Monitor issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1026
+Status          : Closed
+Category        : Network
+Subcategory     : WiFi
+Priority        : P2
+Assignment Group: Software Team
+Assigned To     : Alice
+Opened Date     : 2025-04-11
+Closed Date     : 2025-04-13
+Short Description: WiFi issue reported
+Description     : User reported a WiFi issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1027
+Status          : Closed
+Category        : Hardware
+Subcategory     : Monitor
+Priority        : P3
+Assignment Group: IT Support
+Assigned To     : Bob
+Opened Date     : 2025-06-13
+Closed Date     : 2025-06-14
+Short Description: Monitor issue reported
+Description     : User reported a Monitor issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1028
+Status          : Closed
+Category        : Hardware
+Subcategory     : Printer
+Priority        : P4
+Assignment Group: Security Team
+Assigned To     : David
+Opened Date     : 2025-06-26
+Closed Date     : 2025-06-28
+Short Description: Printer issue reported
+Description     : User reported a Printer issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1029
+Status          : Closed
+Category        : Software
+Subcategory     : Application Error
+Priority        : P1
+Assignment Group: Security Team
+Assigned To     : David
+Opened Date     : 2025-03-17
+Closed Date     : 2025-03-21
+Short Description: Application Error issue reported
+Description     : User reported a Application Error issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1030
+Status          : Closed
+Category        : Network
+Subcategory     : Router
+Priority        : P1
+Assignment Group: Network Team
+Assigned To     : Frank
+Opened Date     : 2025-02-16
+Closed Date     : 2025-02-19
+Short Description: Router issue reported
+Description     : User reported a Router issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1031
+Status          : In Progress
+Category        : Hardware
+Subcategory     : Monitor
+Priority        : P2
+Assignment Group: Security Team
+Assigned To     : Frank
+Opened Date     : 2025-10-18
+Closed Date     : nan
+Short Description: Monitor issue reported
+Description     : User reported a Monitor issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1032
+Status          : In Progress
+Category        : Security
+Subcategory     : Malware
+Priority        : P3
+Assignment Group: Security Team
+Assigned To     : David
+Opened Date     : 2025-07-07
+Closed Date     : nan
+Short Description: Malware issue reported
+Description     : User reported a Malware issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1033
+Status          : On Hold
+Category        : Hardware
+Subcategory     : Keyboard
+Priority        : P4
+Assignment Group: IT Support
+Assigned To     : Alice
+Opened Date     : 2025-09-18
+Closed Date     : nan
+Short Description: Keyboard issue reported
+Description     : User reported a Keyboard issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1034
+Status          : On Hold
+Category        : Network
+Subcategory     : WiFi
+Priority        : P1
+Assignment Group: Security Team
+Assigned To     : Eva
+Opened Date     : 2025-10-29
+Closed Date     : nan
+Short Description: WiFi issue reported
+Description     : User reported a WiFi issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1035
+Status          : New
+Category        : Network
+Subcategory     : WiFi
+Priority        : P3
+Assignment Group: Software Team
+Assigned To     : Hannah
+Opened Date     : 2025-05-16
+Closed Date     : nan
+Short Description: WiFi issue reported
+Description     : User reported a WiFi issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1036
+Status          : On Hold
+Category        : Network
+Subcategory     : Router
+Priority        : P2
+Assignment Group: Network Team
+Assigned To     : Alice
+Opened Date     : 2025-03-31
+Closed Date     : nan
+Short Description: Router issue reported
+Description     : User reported a Router issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1037
+Status          : In Progress
+Category        : Software
+Subcategory     : Update Issue
+Priority        : P4
+Assignment Group: Software Team
+Assigned To     : Hannah
+Opened Date     : 2025-07-13
+Closed Date     : nan
+Short Description: Update Issue issue reported
+Description     : User reported a Update Issue issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1038
+Status          : On Hold
+Category        : Software
+Subcategory     : Crash
+Priority        : P1
+Assignment Group: IT Support
+Assigned To     : David
+Opened Date     : 2025-07-27
+Closed Date     : nan
+Short Description: Crash issue reported
+Description     : User reported a Crash issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1039
+Status          : On Hold
+Category        : Security
+Subcategory     : Malware
+Priority        : P4
+Assignment Group: Software Team
+Assigned To     : Charlie
+Opened Date     : 2025-04-19
+Closed Date     : nan
+Short Description: Malware issue reported
+Description     : User reported a Malware issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1040
+Status          : New
+Category        : Security
+Subcategory     : Unauthorized Access
+Priority        : P1
+Assignment Group: Security Team
+Assigned To     : Charlie
+Opened Date     : 2025-10-01
+Closed Date     : nan
+Short Description: Unauthorized Access issue reported
+Description     : User reported a Unauthorized Access issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1041
+Status          : New
+Category        : Network
+Subcategory     : Router
+Priority        : P2
+Assignment Group: Network Team
+Assigned To     : Frank
+Opened Date     : 2025-05-12
+Closed Date     : nan
+Short Description: Router issue reported
+Description     : User reported a Router issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1042
+Status          : On Hold
+Category        : Software
+Subcategory     : Application Error
+Priority        : P4
+Assignment Group: Security Team
+Assigned To     : Charlie
+Opened Date     : 2025-09-13
+Closed Date     : nan
+Short Description: Application Error issue reported
+Description     : User reported a Application Error issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1043
+Status          : New
+Category        : Hardware
+Subcategory     : Printer
+Priority        : P2
+Assignment Group: IT Support
+Assigned To     : Alice
+Opened Date     : 2025-03-11
+Closed Date     : nan
+Short Description: Printer issue reported
+Description     : User reported a Printer issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1044
+Status          : In Progress
+Category        : Hardware
+Subcategory     : Monitor
+Priority        : P1
+Assignment Group: Network Team
+Assigned To     : Bob
+Opened Date     : 2025-03-05
+Closed Date     : nan
+Short Description: Monitor issue reported
+Description     : User reported a Monitor issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1045
+Status          : New
+Category        : Network
+Subcategory     : WiFi
+Priority        : P3
+Assignment Group: Security Team
+Assigned To     : Bob
+Opened Date     : 2025-10-07
+Closed Date     : nan
+Short Description: WiFi issue reported
+Description     : User reported a WiFi issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1046
+Status          : In Progress
+Category        : Hardware
+Subcategory     : Printer
+Priority        : P4
+Assignment Group: Network Team
+Assigned To     : Alice
+Opened Date     : 2025-04-09
+Closed Date     : nan
+Short Description: Printer issue reported
+Description     : User reported a Printer issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1047
+Status          : New
+Category        : Security
+Subcategory     : Malware
+Priority        : P2
+Assignment Group: Software Team
+Assigned To     : Grace
+Opened Date     : 2025-02-24
+Closed Date     : nan
+Short Description: Malware issue reported
+Description     : User reported a Malware issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1048
+Status          : On Hold
+Category        : Security
+Subcategory     : Malware
+Priority        : P3
+Assignment Group: Software Team
+Assigned To     : Charlie
+Opened Date     : 2025-07-30
+Closed Date     : nan
+Short Description: Malware issue reported
+Description     : User reported a Malware issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1049
+Status          : New
+Category        : Hardware
+Subcategory     : Printer
+Priority        : P3
+Assignment Group: IT Support
+Assigned To     : Frank
+Opened Date     : 2025-07-26
+Closed Date     : nan
+Short Description: Printer issue reported
+Description     : User reported a Printer issue that needed attention.
+---------------------------------------------------------------------
+
+Incident ID     : INC1050
+Status          : New
+Category        : Software
+Subcategory     : Crash
+Priority        : P3
+Assignment Group: Security Team
+Assigned To     : Bob
+Opened Date     : 2025-01-03
+Closed Date     : nan
+Short Description: Crash issue reported
+Description     : User reported a Crash issue that needed attention.
+---------------------------------------------------------------------
+
+2. Resolution Notes for Closed Incidents
+----------------------------------------
+These incidents have been resolved and verified. The notes can be used as reference
+for mapping similar future incidents based on category, subcategory, and priority.
+
+Incident ID : INC1001
+Status      : Closed
+Category    : Software
+Subcategory : Update Issue
+Priority    : P3
+Summary     : Update Issue issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Update Issue.
+Step 2: Investigated the Update Issue issue using system diagnostics and logs.
+Step 3: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Applied fix to resolve Update Issue problem.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1002
+Status      : Closed
+Category    : Software
+Subcategory : Application Error
+Priority    : P1
+Summary     : Application Error issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Application Error.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Applied fix to resolve Application Error problem.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Investigated the Application Error issue using system diagnostics and logs.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1003
+Status      : Closed
+Category    : Software
+Subcategory : Update Issue
+Priority    : P4
+Summary     : Update Issue issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Update Issue.
+Step 2: Applied fix to resolve Update Issue problem.
+Step 3: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 4: Investigated the Update Issue issue using system diagnostics and logs.
+Step 5: Verified the resolution with the user and tested functionality.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1004
+Status      : Closed
+Category    : Hardware
+Subcategory : Printer
+Priority    : P1
+Summary     : Printer issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Printer.
+Step 2: Applied fix to resolve Printer problem.
+Step 3: Verified the resolution with the user and tested functionality.
+Step 4: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 5: Investigated the Printer issue using system diagnostics and logs.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Hardware incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1005
+Status      : Closed
+Category    : Network
+Subcategory : WiFi
+Priority    : P1
+Summary     : WiFi issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding WiFi.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Applied fix to resolve WiFi problem.
+Step 4: Investigated the WiFi issue using system diagnostics and logs.
+Step 5: Verified the resolution with the user and tested functionality.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Network incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1006
+Status      : Closed
+Category    : Security
+Subcategory : Unauthorized Access
+Priority    : P4
+Summary     : Unauthorized Access issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Unauthorized Access.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Applied fix to resolve Unauthorized Access problem.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Investigated the Unauthorized Access issue using system diagnostics and logs.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Security incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1007
+Status      : Closed
+Category    : Network
+Subcategory : Router
+Priority    : P2
+Summary     : Router issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Router.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Investigated the Router issue using system diagnostics and logs.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Applied fix to resolve Router problem.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Network incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1008
+Status      : Closed
+Category    : Security
+Subcategory : Malware
+Priority    : P1
+Summary     : Malware issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Malware.
+Step 2: Verified the resolution with the user and tested functionality.
+Step 3: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 4: Investigated the Malware issue using system diagnostics and logs.
+Step 5: Applied fix to resolve Malware problem.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Security incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1009
+Status      : Closed
+Category    : Software
+Subcategory : Update Issue
+Priority    : P1
+Summary     : Update Issue issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Update Issue.
+Step 2: Investigated the Update Issue issue using system diagnostics and logs.
+Step 3: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 4: Applied fix to resolve Update Issue problem.
+Step 5: Verified the resolution with the user and tested functionality.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1010
+Status      : Closed
+Category    : Software
+Subcategory : Update Issue
+Priority    : P2
+Summary     : Update Issue issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Update Issue.
+Step 2: Verified the resolution with the user and tested functionality.
+Step 3: Applied fix to resolve Update Issue problem.
+Step 4: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 5: Investigated the Update Issue issue using system diagnostics and logs.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1011
+Status      : Closed
+Category    : Hardware
+Subcategory : Monitor
+Priority    : P4
+Summary     : Monitor issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Monitor.
+Step 2: Verified the resolution with the user and tested functionality.
+Step 3: Applied fix to resolve Monitor problem.
+Step 4: Investigated the Monitor issue using system diagnostics and logs.
+Step 5: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Hardware incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1012
+Status      : Closed
+Category    : Security
+Subcategory : Unauthorized Access
+Priority    : P2
+Summary     : Unauthorized Access issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Unauthorized Access.
+Step 2: Applied fix to resolve Unauthorized Access problem.
+Step 3: Investigated the Unauthorized Access issue using system diagnostics and logs.
+Step 4: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 5: Verified the resolution with the user and tested functionality.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Security incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1013
+Status      : Closed
+Category    : Security
+Subcategory : Phishing
+Priority    : P4
+Summary     : Phishing issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Phishing.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Investigated the Phishing issue using system diagnostics and logs.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Applied fix to resolve Phishing problem.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Security incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1014
+Status      : Closed
+Category    : Hardware
+Subcategory : Printer
+Priority    : P4
+Summary     : Printer issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Printer.
+Step 2: Investigated the Printer issue using system diagnostics and logs.
+Step 3: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 4: Applied fix to resolve Printer problem.
+Step 5: Verified the resolution with the user and tested functionality.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Hardware incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1015
+Status      : Closed
+Category    : Software
+Subcategory : Application Error
+Priority    : P1
+Summary     : Application Error issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Application Error.
+Step 2: Verified the resolution with the user and tested functionality.
+Step 3: Investigated the Application Error issue using system diagnostics and logs.
+Step 4: Applied fix to resolve Application Error problem.
+Step 5: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1016
+Status      : Closed
+Category    : Network
+Subcategory : WiFi
+Priority    : P4
+Summary     : WiFi issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding WiFi.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Verified the resolution with the user and tested functionality.
+Step 4: Applied fix to resolve WiFi problem.
+Step 5: Investigated the WiFi issue using system diagnostics and logs.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Network incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1017
+Status      : Closed
+Category    : Hardware
+Subcategory : Monitor
+Priority    : P4
+Summary     : Monitor issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Monitor.
+Step 2: Applied fix to resolve Monitor problem.
+Step 3: Verified the resolution with the user and tested functionality.
+Step 4: Investigated the Monitor issue using system diagnostics and logs.
+Step 5: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Hardware incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1018
+Status      : Closed
+Category    : Hardware
+Subcategory : Keyboard
+Priority    : P1
+Summary     : Keyboard issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Keyboard.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Investigated the Keyboard issue using system diagnostics and logs.
+Step 4: Applied fix to resolve Keyboard problem.
+Step 5: Verified the resolution with the user and tested functionality.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Hardware incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1019
+Status      : Closed
+Category    : Network
+Subcategory : VPN
+Priority    : P1
+Summary     : VPN issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding VPN.
+Step 2: Applied fix to resolve VPN problem.
+Step 3: Investigated the VPN issue using system diagnostics and logs.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Network incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1020
+Status      : Closed
+Category    : Software
+Subcategory : Crash
+Priority    : P3
+Summary     : Crash issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Crash.
+Step 2: Applied fix to resolve Crash problem.
+Step 3: Investigated the Crash issue using system diagnostics and logs.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1021
+Status      : Closed
+Category    : Network
+Subcategory : WiFi
+Priority    : P2
+Summary     : WiFi issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding WiFi.
+Step 2: Verified the resolution with the user and tested functionality.
+Step 3: Investigated the WiFi issue using system diagnostics and logs.
+Step 4: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 5: Applied fix to resolve WiFi problem.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Network incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1022
+Status      : Closed
+Category    : Software
+Subcategory : Application Error
+Priority    : P1
+Summary     : Application Error issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Application Error.
+Step 2: Verified the resolution with the user and tested functionality.
+Step 3: Applied fix to resolve Application Error problem.
+Step 4: Investigated the Application Error issue using system diagnostics and logs.
+Step 5: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1023
+Status      : Closed
+Category    : Network
+Subcategory : WiFi
+Priority    : P2
+Summary     : WiFi issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding WiFi.
+Step 2: Verified the resolution with the user and tested functionality.
+Step 3: Investigated the WiFi issue using system diagnostics and logs.
+Step 4: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 5: Applied fix to resolve WiFi problem.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Network incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1024
+Status      : Closed
+Category    : Software
+Subcategory : Crash
+Priority    : P2
+Summary     : Crash issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Crash.
+Step 2: Investigated the Crash issue using system diagnostics and logs.
+Step 3: Verified the resolution with the user and tested functionality.
+Step 4: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 5: Applied fix to resolve Crash problem.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1025
+Status      : Closed
+Category    : Hardware
+Subcategory : Monitor
+Priority    : P2
+Summary     : Monitor issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Monitor.
+Step 2: Applied fix to resolve Monitor problem.
+Step 3: Verified the resolution with the user and tested functionality.
+Step 4: Investigated the Monitor issue using system diagnostics and logs.
+Step 5: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Hardware incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1026
+Status      : Closed
+Category    : Network
+Subcategory : WiFi
+Priority    : P2
+Summary     : WiFi issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding WiFi.
+Step 2: Verified the resolution with the user and tested functionality.
+Step 3: Applied fix to resolve WiFi problem.
+Step 4: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 5: Investigated the WiFi issue using system diagnostics and logs.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Network incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1027
+Status      : Closed
+Category    : Hardware
+Subcategory : Monitor
+Priority    : P3
+Summary     : Monitor issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Monitor.
+Step 2: Investigated the Monitor issue using system diagnostics and logs.
+Step 3: Applied fix to resolve Monitor problem.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Hardware incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1028
+Status      : Closed
+Category    : Hardware
+Subcategory : Printer
+Priority    : P4
+Summary     : Printer issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Printer.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Applied fix to resolve Printer problem.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Investigated the Printer issue using system diagnostics and logs.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Hardware incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1029
+Status      : Closed
+Category    : Software
+Subcategory : Application Error
+Priority    : P1
+Summary     : Application Error issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Application Error.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Verified the resolution with the user and tested functionality.
+Step 4: Applied fix to resolve Application Error problem.
+Step 5: Investigated the Application Error issue using system diagnostics and logs.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Software incidents every quarter.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1030
+Status      : Closed
+Category    : Network
+Subcategory : Router
+Priority    : P1
+Summary     : Router issue reported
+
+Resolution Notes:
+Step 1: Reviewed incident details and gathered logs from user regarding Router.
+Step 2: Performed troubleshooting steps such as restarting services, checking configurations, and applying updates.
+Step 3: Investigated the Router issue using system diagnostics and logs.
+Step 4: Verified the resolution with the user and tested functionality.
+Step 5: Applied fix to resolve Router problem.
+Step 6: Updated the incident with notes and closed the ticket.
+
+Verification:
+- Issue validated by end user post-resolution.
+- System monitoring confirmed stability for 24 hours post-fix.
+
+Preventive Measures:
+- Add automated alerting for similar errors.
+- Schedule review for Network incidents every quarter.
+
+---------------------------------------------------------------------
+
+3. Work-In-Progress Notes (Open Incidents)
+------------------------------------------
+These incidents are currently being investigated or are awaiting resolution.
+
+Incident ID : INC1031
+Status      : In Progress
+Category    : Hardware
+Subcategory : Monitor
+Priority    : P2
+Summary     : Monitor issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Security Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Hardware or Monitor.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1032
+Status      : In Progress
+Category    : Security
+Subcategory : Malware
+Priority    : P3
+Summary     : Malware issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Security Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Security or Malware.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1033
+Status      : On Hold
+Category    : Hardware
+Subcategory : Keyboard
+Priority    : P4
+Summary     : Keyboard issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by IT Support.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Hardware or Keyboard.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1034
+Status      : On Hold
+Category    : Network
+Subcategory : WiFi
+Priority    : P1
+Summary     : WiFi issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Security Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Network or WiFi.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1035
+Status      : New
+Category    : Network
+Subcategory : WiFi
+Priority    : P3
+Summary     : WiFi issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Software Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Network or WiFi.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1036
+Status      : On Hold
+Category    : Network
+Subcategory : Router
+Priority    : P2
+Summary     : Router issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Network Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Network or Router.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1037
+Status      : In Progress
+Category    : Software
+Subcategory : Update Issue
+Priority    : P4
+Summary     : Update Issue issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Software Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Software or Update Issue.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1038
+Status      : On Hold
+Category    : Software
+Subcategory : Crash
+Priority    : P1
+Summary     : Crash issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by IT Support.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Software or Crash.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1039
+Status      : On Hold
+Category    : Security
+Subcategory : Malware
+Priority    : P4
+Summary     : Malware issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Software Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Security or Malware.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1040
+Status      : New
+Category    : Security
+Subcategory : Unauthorized Access
+Priority    : P1
+Summary     : Unauthorized Access issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Security Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Security or Unauthorized Access.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1041
+Status      : New
+Category    : Network
+Subcategory : Router
+Priority    : P2
+Summary     : Router issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Network Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Network or Router.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1042
+Status      : On Hold
+Category    : Software
+Subcategory : Application Error
+Priority    : P4
+Summary     : Application Error issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Security Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Software or Application Error.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1043
+Status      : New
+Category    : Hardware
+Subcategory : Printer
+Priority    : P2
+Summary     : Printer issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by IT Support.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Hardware or Printer.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1044
+Status      : In Progress
+Category    : Hardware
+Subcategory : Monitor
+Priority    : P1
+Summary     : Monitor issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Network Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Hardware or Monitor.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1045
+Status      : New
+Category    : Network
+Subcategory : WiFi
+Priority    : P3
+Summary     : WiFi issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Security Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Network or WiFi.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1046
+Status      : In Progress
+Category    : Hardware
+Subcategory : Printer
+Priority    : P4
+Summary     : Printer issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Network Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Hardware or Printer.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1047
+Status      : New
+Category    : Security
+Subcategory : Malware
+Priority    : P2
+Summary     : Malware issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Software Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Security or Malware.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1048
+Status      : On Hold
+Category    : Security
+Subcategory : Malware
+Priority    : P3
+Summary     : Malware issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Software Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Security or Malware.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1049
+Status      : New
+Category    : Hardware
+Subcategory : Printer
+Priority    : P3
+Summary     : Printer issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by IT Support.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Hardware or Printer.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+Incident ID : INC1050
+Status      : New
+Category    : Software
+Subcategory : Crash
+Priority    : P3
+Summary     : Crash issue reported
+
+Current Findings:
+- Preliminary investigation ongoing by Security Team.
+- Logs and performance metrics under review.
+
+Next Steps:
+1. Collect additional diagnostics from affected systems.
+2. Identify potential root causes aligned with Software or Crash.
+3. Engage relevant support teams if escalation required.
+
+ETA for Resolution: TBD
+Next Update: Pending next diagnostic review.
+
+---------------------------------------------------------------------
+
+4. Mapping & Inference Guidelines for New Incidents
+---------------------------------------------------
+When a new incident is reported:
+- Match based on **Category**, **Subcategory**, and **Priority**.
+- Use **Short Description** keywords to identify similar incident patterns.
+- Retrieve and review **Resolution Notes** from most similar closed incidents.
+- For unresolved cases, refer to ongoing incident investigation notes.
+- Always record deviations or new observations for continuous improvement.
+
+5. Document Information
+------------------------
+Version      : 1.0
+Prepared By  : IT Operations Team
+Last Updated : 2025-11-06

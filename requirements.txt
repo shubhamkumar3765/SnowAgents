@@ -1,0 +1,9 @@
+streamlit
+pandas
+openai
+langchain
+langgraph
+faiss-cpu
+perplexityai
+python-dotenv
+sentence-transformers
