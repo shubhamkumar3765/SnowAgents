@@ -1,0 +1,211 @@
+import os
+import streamlit as st
+import pandas as pd
+from langchain.vectorstores import FAISS
+from langgraph import Graph, Agent
+from dotenv import load_dotenv
+
+# -----------------------
+# 0️⃣ Load .env
+# -----------------------
+load_dotenv()
+perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
+if not perplexity_api_key:
+    st.error("PERPLEXITY_API_KEY not found in .env file!")
+    st.stop()
+
+# -----------------------
+# 1️⃣ Load Data
+# -----------------------
+@st.cache_data
+def load_incidents(file_path):
+    return pd.read_excel(file_path)
+
+@st.cache_data
+def load_sop(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    incidents, resolutions = [], []
+    for line in lines:
+        if " - " in line:
+            inc, res = line.strip().split(" - ", 1)
+            incidents.append(inc)
+            resolutions.append(res)
+    df = pd.DataFrame({"Incident": incidents, "Resolution": resolutions})
+    return df
+
+incident_file = "ServiceNow_Incidents_Sample.xlsx"
+sop_file = "Generated_Incident_SOP.txt"
+
+all_incidents = load_incidents(incident_file)
+sop_df = load_sop(sop_file)
+
+# -----------------------
+# 2️⃣ Prepare Knowledge Base
+# -----------------------
+knowledge_df = pd.concat([
+    all_incidents[['Short Description','Resolution']].dropna(),
+    sop_df[['Incident','Resolution']].rename(columns={'Incident':'Short Description'})
+], ignore_index=True)
+
+docs = [f"{row['Short Description']} - {row['Resolution']}" for idx, row in knowledge_df.iterrows()]
+
+# -----------------------
+# 3️⃣ Initialize FAISS Vector Store with local embeddings
+# -----------------------
+from langchain.embeddings import HuggingFaceEmbeddings
+
+vectorstore_path = "vectorstore/faiss_index"
+if os.path.exists(vectorstore_path):
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    vectorstore = FAISS.load_local(vectorstore_path, embeddings)
+else:
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    vectorstore = FAISS.from_texts(docs, embeddings)
+    os.makedirs("vectorstore", exist_ok=True)
+    vectorstore.save_local(vectorstore_path)
+
+# -----------------------
+# 4️⃣ Initialize Perplexity API client
+# -----------------------
+from perplexity import Perplexity
+perplexity_client = Perplexity(api_key=perplexity_api_key)
+
+def perplexity_chat(messages, model="sonar-pro"):
+    response = perplexity_client.chat.completions.create(
+        model=model,
+        messages=messages
+    )
+    return response.choices[0].message.content
+
+# -----------------------
+# 5️⃣ Define LangGraph Agents
+# -----------------------
+class IncidentCreationAgent(Agent):
+    def run(self, incident_input):
+        incident = {
+            "ID": incident_input.get("ID", None),
+            "Short Description": incident_input["short_desc"],
+            "Description": incident_input["desc"],
+            "Priority": incident_input["priority"],
+            "Status": "Created",
+            "Resolution Suggestion": "",
+            "Assignment Group": ""
+        }
+        return incident
+
+class ResolutionAgent(Agent):
+    def run(self, incident):
+        results = vectorstore.similarity_search(
+            incident["Short Description"] + " " + incident["Description"], k=3
+        )
+        base_suggestion = "\n".join([r.page_content for r in results])
+        prompt = [
+            {"role": "user", "content": f"Incident: {incident['Short Description']}\nDescription: {incident['Description']}\nBased on past incidents:\n{base_suggestion}\nSuggest a resolution."}
+        ]
+        refined = perplexity_chat(prompt)
+        incident["Resolution Suggestion"] = refined
+        incident["Status"] = "Resolution Suggested"
+        return incident
+
+class TriageAgent(Agent):
+    def run(self, incident):
+        desc_lower = incident["Description"].lower()
+        if "network" in desc_lower:
+            incident["Assignment Group"] = "Network Team"
+        elif "software" in desc_lower:
+            incident["Assignment Group"] = "Software Team"
+        else:
+            incident["Assignment Group"] = "General Support"
+        return incident
+
+graph = Graph()
+graph.add_node("incident_creator", IncidentCreationAgent())
+graph.add_node("resolution_agent", ResolutionAgent())
+graph.add_node("triage_agent", TriageAgent())
+graph.add_edge("incident_creator", "resolution_agent")
+graph.add_edge("resolution_agent", "triage_agent")
+
+# -----------------------
+# 6️⃣ Streamlit Session State
+# -----------------------
+if 'incidents' not in st.session_state:
+    st.session_state['incidents'] = []
+
+# -----------------------
+# 7️⃣ Streamlit UI
+# -----------------------
+st.title("Agentic AI Incident Management System (Perplexity + Local Embeddings)")
+
+# Sidebar: Filter & Tracker
+st.sidebar.title("Incident Tracker & Filters")
+status_filter = st.sidebar.multiselect(
+    "Filter by Status",
+    ["Created","Resolution Suggested","Assigned","In Progress"],
+    default=["Created","Resolution Suggested","Assigned","In Progress"]
+)
+group_filter = st.sidebar.multiselect(
+    "Filter by Assignment Group",
+    ["Network Team","Software Team","General Support"],
+    default=["Network Team","Software Team","General Support"]
+)
+
+filtered_incidents = [i for i in st.session_state['incidents']
+                      if i['Status'] in status_filter and i['Assignment Group'] in group_filter]
+
+st.sidebar.subheader("Open Incidents")
+for incident in filtered_incidents:
+    st.sidebar.write(f"{incident['ID']}: {incident['Status']} ({incident['Assignment Group']})")
+
+# Main UI: Create Incident
+st.subheader("Create New Incident")
+with st.form("incident_form"):
+    short_desc = st.text_input("Short Description")
+    desc = st.text_area("Description")
+    priority = st.selectbox("Priority", ["Low","Medium","High","Critical"])
+    submit = st.form_submit_button("Create Incident")
+
+if submit:
+    incident_input = {
+        "ID": len(st.session_state['incidents']) + 1,
+        "short_desc": short_desc,
+        "desc": desc,
+        "priority": priority
+    }
+
+    final_incident = graph.run("incident_creator", incident_input)
+    final_incident = graph.run("resolution_agent", final_incident)
+    final_incident = graph.run("triage_agent", final_incident)
+    st.session_state['incidents'].append(final_incident)
+
+    st.success(f"Incident Created!")
+    st.info(f"Suggested Resolution: {final_incident['Resolution Suggestion']}")
+    st.info(f"Triage Assignment: {final_incident['Assignment Group']}")
+    st.info(f"Status: {final_incident['Status']} (Incident remains open)")
+
+# Status Update (No closing)
+st.subheader("Update Incident Status")
+if st.session_state['incidents']:
+    incident_ids = [i['ID'] for i in st.session_state['incidents']]
+    selected_id = st.selectbox("Select Incident", incident_ids)
+    selected_incident = next(i for i in st.session_state['incidents'] if i['ID'] == selected_id)
+
+    new_status = st.selectbox(
+        "Update Status",
+        ["Created","Resolution Suggested","Assigned","In Progress"],
+        index=["Created","Resolution Suggested","Assigned","In Progress"].index(selected_incident["Status"])
+    )
+
+    if st.button("Update Status"):
+        selected_incident["Status"] = new_status
+        st.success(f"Incident {selected_id} status updated to {new_status}")
+        st.info("Incident remains open. Agents only suggest resolutions and assign groups.")
+
+# Search Historical Incidents / SOP
+st.subheader("Search Historical Incidents / SOP Knowledge Base")
+query = st.text_input("Enter keywords to search incidents or SOP")
+if query:
+    results = vectorstore.similarity_search(query, k=5)
+    st.write("Top Related Knowledge:")
+    for res in results:
+        st.write(res.page_content)
